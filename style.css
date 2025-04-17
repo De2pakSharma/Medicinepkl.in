@@ -1,8 +1,43 @@
+ *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", Arial, Tahoma, sans-serif;
+ }
+
+.top-bar {
+  background: linear-gradient(to right, #4394c2, #e15b2e);
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 0;
+}
+.top-bar .text-highlight {
+  color: #fff;
+  font-weight: 600;
+}
+.top-bar .phone i {
+  margin-right: 5px;
+  color: #fff;
+}
+.top-bar .social-icons a {
+  color: #fff;
+  margin-left: 10px;
+  padding: 0 8px;
+  border-left: 1px solid #fff;
+}
+.top-bar .social-icons a:first-child {
+  border-left: none;
+}
+.top-bar .right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 .icon-circle {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,31 +45,31 @@
   margin-bottom: 5px;
 }
 
-.border-red { border: 3px solid red; color: red; }
-.border-green { border: 3px solid #7CAF30; color: #7CAF30; }
-.border-purple { border: 3px solid #A333A3; color: #A333A3; }
-.border-lightgreen { border: 3px solid #6ECC71; color: #6ECC71; }
-.border-pink { border: 3px solid #FFA5A5; color: #FFA5A5; }
-.border-blue { border: 3px solid #2A80B9; color: #2A80B9; }
+.border-red { border: 2px solid red; color: red; }
+.border-green { border: 2px solid #7CAF30; color: #7CAF30; }
+.border-purple { border: 2px solid #A333A3; color: #A333A3; }
+.border-lightgreen { border: 2px solid #6ECC71; color: #6ECC71; }
+.border-pink { border: 2px solid #FFA5A5; color: #FFA5A5; }
+.border-blue { border: 2px solid #2A80B9; color: #2A80B9; }
 
 .call-box {
   background-color: #4A9FCF;
   color: white;
-  font-size: 14px;
-  padding: 10px 15px;
-  border-radius: 6px;
+  font-size: 12px;
+  padding: 8px 12px;
+  border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   white-space: nowrap;
 }
 .custom-search-box input {
   background-color: #e6655d;
   border: none;
   color: white;
-  height: 45px;
-  padding: 10px 15px;
+  height: 40px;
+  padding: 8px 12px;
 }
 
 .custom-search-box input::placeholder {
@@ -44,8 +79,8 @@
 .custom-search-box button {
   background-color: #0099cc;
   border: none;
-  height: 45px;
-  padding: 0 15px;
+  height: 40px;
+  padding: 0 12px;
   color: white;
 }
 
@@ -65,6 +100,36 @@
 }
   .h6{
     color: white;
+  }
+  .feature-section {
+    background-color: #eb5a20;
+    padding: 15px 0;
+    color: white;
+  }
+  .feature-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  .feature-icon {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+  .feature-text {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .feature-border {
+    border-left: 1px solid white;
   }
 
   .enquiry-box {
@@ -223,6 +288,32 @@
     color: #007bff;
     text-decoration: none;
 }
+footer {
+  background-color: #3a3737;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.footer-text {
+  color: #ccc;
+}
+.footer-icons a {
+  color: #fff;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+.footer-icons a:hover {
+  color: #00acee;
+}
+.back-to-top {
+  color: #00acee;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 18px;
+}
+.back-to-top:hover {
+  color: #fff;
+}
  
   @media (max-width: 991px) {
     .navbar-expand-lg .navbar-nav .nav-link{
@@ -270,15 +361,35 @@
     .bothbox{ 
       display: none !important;
       }
+      .footer-icons{
+        display: none !important;
+      }
+      .feature-border {
+        border-left: none;
+        border-top: 1px solid white;
     }
-   
-  
-
+  }
   @media (max-width: 500px){
+    .text,.text1{
+       text-align: center;
+    }
+    .text1{
+      display: none;
+    }
+    .right-section{
+      display: none !important;
+    }
     .butoom p{
       display: none;
     }
     .product-card{
       margin: 10%;
     } 
+    .ptr{
+      display: none !important;
+    }
+    .contact-section{
+      text-align: center !important;
+    }
+
   }
