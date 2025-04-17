@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid sticky-navbar" style="padding: 0% 5%;" >
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="images/Logo.png" alt="Logo" width="100" />
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-xmark"></i>
+        </button>
+
+        <!-- Nav Items + Call + Search -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-3 text-center text-lg-start">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <div class="icon-circle border-red"><i class="fas fa-home"></i></div>HOME
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success fw-bold" href="#">
+                <div class="icon-circle border-green"><i class="fas fa-dna"></i></div>WHO WE ARE
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <div class="icon-circle border-purple"><i class="fas fa-brain"></i></div>WHAT WE DO
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <div class="icon-circle border-lightgreen"><i class="fas fa-pills"></i></div>PRODUCTS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">
+                <div class="icon-circle border-pink"><i class="fas fa-link"></i></div>QUICK LINKS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <div class="icon-circle border-blue"><i class="fas fa-sailboat"></i></div>CONTACT US
+              </a>
+            </li>
+          </ul>
+
+          <!-- Call and Search Box -->
+          <div class="d-flex align-items-center gap-3 ms-lg-4 flex-wrap mt-3 mt-lg-0 bothbox">
+            <div class="call-box">
+              <i class="fas fa-phone"></i>
+              <div>
+                Call Us Now!<br><strong>+91-7888491021</strong>
+              </div>
+            </div>
+            <form class="d-flex custom-search-box" role="search">
+              <input type="text" class="form-control rounded-0 rounded-start" placeholder="Search here..">
+              <button class="btn rounded-0 rounded-end" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+    <section>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Website-Banner1.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="images/BANNER2.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="images/banner3.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="images/bannner4.jpg" class="d-block w-100" >
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section1" style="background-color: #ef5a22;">
+      <div class="container py-3">
+        <div class="row text-white">
+          <div class="col-12 col-md-6 col-lg-3 mb-3 d-flex align-items-center">
+            <i class="fa-regular fa-file-lines service-icon"></i>
+            <h6>Download Price List</h6>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-3 d-flex align-items-center">
+            <i class="fa-regular fa-handshake service-icon"></i>
+            <h6>PCD Pharma Franchise</h6>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-3 d-flex align-items-center">
+            <i class="fa-regular fa-face-smile service-icon"></i>
+            <h6>Third Party Manufacturing</h6>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-3 d-flex align-items-center">
+            <i class="fa-regular fa-bowl-rice service-icon"></i>
+            <h6>Ayurvedic PCD Franchise</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container my-5">
+      <div class="row g-4">
+        <!-- Video -->
+        <div class="col-md-6">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video" allowfullscreen></iframe>
+          </div>
+          <div class="text">
+            <h3 style="color: rgb(0, 183, 255); text-align: center; font-weight: 600;">Alicanto Drugs</h3>
+        <p>Top PCD Pharma Franchise Company- Alicanto Drugs is a rising name in the Pharmaceutical industry. We have committed ourselves towards providing best quality products and services to our clients. We deal in a wide range of Eye Drops, Capsules, Tablets, Syrups, Dry Syrups, injectables, Ointments, Protein Powder and a brand new Ayurveda / herbal line. Some of our best selling products are Gynae, Dental, and Pediatric.
+        </p>
+        <p>  Our mission is to provide quality and affordable pharmaceutical Products ' Enriching human lives globally'. Our medicines are developed under the strict guidance of renowned healthcare professionals. Moreover, our Expertise in Leakage & Breakage proof packaging and timely delivery has also helped us earn a good reputation amongst the Best PCD Pharma Companies in India.
+          </p><p>
+          We are providing our “Pharma Franchise Business Opportunity all over the Globe". We offer a monopoly based Pharma franchise / PCD franchise opportunity with free promotional material and marketing support. We invite you to join hands with us for a better tomorrow. You can contact us on 7888491021 and write to us on alicantodrugs@gmail.com.</p>
+          </div>
+        </div>
+    
+        <!-- Enquiry Form -->
+        <div class="col-md-6">
+          <div class="enquiry-box">
+            <h3>SEND ENQUIRY</h3>
+            <form>
+              <div class="row">
+                <div class="col-md-4">
+                  <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" placeholder="City">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" placeholder="Contact">
+                </div>
+              </div>
+              <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+              <div class="text-center mt-3">
+                <button type="submit" class="btn btn-send">Send Message</button>
+              </div>
+            </form>
+          </div>
+          <img src="images/sidebanner.jpg" class="sideimg">
+        </div>
+      </div>
+    </div>
+ 
+    <section class="who-we-are mt-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Who <span style="color: #00a6eb;">We Are</span></h2>
+        <p class="mb-5">
+          We are a Pharmaceutical Firm based in Panchkula (Haryana) dealing in a wide range of Quality Pharmaceutical products
+          and providing PCD Pharma Franchise all over the Globe. We are also getting Third Party Manufacturing done for our clients.
+          Our Marketing and Sales team Consists of very capable, focused and experienced Employees enabling us to provide good
+          services to our clients.
+        </p>
+    
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="info-card h-100">
+              <i class="fa-solid fa-award fa-2xl" style="color: #ffffff;"></i>
+              <h5>Customer Satisfaction</h5>
+              <p>We Thrive to Satisfy our customer, it is the Primary aim of our company.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="info-card h-100" style="background-color: #007dab;">
+ <i class="fa-regular fa-rectangle-list fa-2xl" style="color: #ffffff;"></i>
+              <h5>Quality Control</h5>
+              <p>Our medicines are developed under the strict guidance of renowned healthcare professionals. We work very hard to maintain our Standards.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="info-card h-100" style="background-color: #009fce;">
+              <i class="fa-solid fa-award fa-2xl" style="color: #ffffff;"></i>
+              <h5>Value</h5>
+              <p>As a PCD Pharma Franchise Company we work on certain protocols that allow us to have a mutual growth relationship with our partners.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="info-card h-100" style="background-color: #005987;">
+ <i class="fa-regular fa-rectangle-list fa-2xl" style="color: #ffffff;"></i>
+              <h5>Our Mission</h5>
+              <p>Our aim is to introduce new molecules and formulations to enrich human lives.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-products text-center mt-5">
+      <div class="container">
+        <h2 class="fw-bold mb-3">Our Latest <span style="color: #00a6eb;">Products</span></h2>
+        <p class="mb-4">
+          Our products include Pharmaceutical Drops, Pharmaceutical Capsules, Pharmaceutical Tablets, Pharmaceutical Syrups, 
+          Pharmaceutical Injectables, Pharmaceutical Ointments, Protein Powder and Herbal etc. All the Pharmaceutical Products in our 
+          company thoroughly manufactured and produced in our manufacturing units that have equipment and machinery that agrees with 
+          the standards set by the revered institutions like the GMP, ISO, and the WHO, our products are a testament of quality and 
+          reliability, along with durability.
+        </p>
+    
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-12 mt-3">
+                  <div class="product-card">
+                    <img src="images/Citikay-Plus-Tablets-600x600.jpg" alt="Product 1">
+                    <p class="product-title">Myo-Inositol and Metformin Hydrochloride Tablet | Myogin-M Tablets</p>
+                    <button class="read-btn">Read more</button>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mt-3">
+                  <div class="product-card">
+                    <img src="images/Estorem-2-600x600.jpg" alt="Product 2">
+                    <p class="product-title">Estradiol Valerate Tablet | Estorem 2 Tablets – Gyno Remedies</p>
+                    <button class="read-btn">Read more</button>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mt-3">
+                  <div class="product-card">
+                    <img src="images/Joint-Jack-DGM-Tablets-600x600 (1).jpg" alt="Product 3">
+                    <p class="product-title">Diacerien Glucosamine Sulphate Potassium Chloride & Methyl Sulfonyl Methane Tablet</p>
+                    <button class="read-btn">Read more</button>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mt-3">
+                  <div class="product-card">
+                    <img src="images/Myo-Inositol-and-Metformin-Hydrochloride-Tablet-600x600.jpg" alt="Product 4">
+                    <p class="product-title">Citicoline Piracetam Tablet | Citicoline+Piracetam Tablet | Citikay-Plus Tablets</p>
+                    <button class="read-btn">Read more</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+    
+            <!-- Add more carousel-item divs here for more slides if needed -->
+    
+          </div>
+    
+         
+    
+ 
+        </div>
+      </div>
+    </section>
+
+<div class="container butoom mt-5">
+  <div class="row">
+    <div class="col-12">
+      <h3 style="text-align: center;">
+        PCD Pharma Franchise <span style="color: #005987;">Business Opportunity</span> </h3>
+        <p style="text-align: center;">At Alicanto Drugs, we have taken it upon ourselves to become the paramount PCD Pharma Franchise Company in India. And with that, we aim to provide the best medical supplies to all of India. So many things could divide the people of India, but health is the one thing we feel is above all else. Therefore, we have made it our mission to serve the people of India with premium quality medications. Thus, we have so many individuals who have collaborated with us to make healthcare our number one priority.</p>
+    </div>
+    <div class=" col-lg-6 col-md-6 col-sm-12">
+      <p>t Alicanto Drugs, we are an emerging Pharma Franchise Company that has perfected its products in a way that they are safe and effective on all. And, we are a company that everyone finds as a reliable partner. This is because we have exclusive services that we provide to our Pharma Franchise members. Our services are something people find helpful and supportive in the Pharmaceutical Market.</p>
+       <ul>
+        <li>We provide the best Marketing and Promotional Support out there.</li>
+     <li>Our company provides clients with Monopoly Rights in the areas of your choice</li>
+     <li>We provide the best Marketing and Promotional Support out there.</li>
+     <li>Our company provides clients with Monopoly Rights in the areas of your choice</li>
+     <li>We also have 24-hour customer service lines via which we love to assist our clients</li>
+      </ul>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="enquiry-box">
+          <h3>SEND ENQUIRY</h3>
+          <form>
+            <div class="row">
+              <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="City">
+              </div>
+              <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="Contact">
+              </div>
+            </div>
+            <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+            <div class="text-center mt-3">
+              <button type="submit" class="btn btn-send">Send Message</button>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid contact-section mt-5">
+  <div class="row align-items-center justify-content-between">
+    <div class="col-md-auto mb-2 mb-md-0">
+      <h3 class="fw-bold mb-0">Get in touch</h3>
+    </div>
+    <div class="col-md">
+      <div class="d-flex align-items-center">
+        <div class="divider d-none d-md-block"></div>
+        <p class="mb-0">
+          To find out how we can help you or to request a brochure send us an 
+          <a href="mailto:example@example.com">email</a> and we'll get back to you as soon as we can.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-auto">
+      <button class="btn btn-orange">PTR PTS Calculator</button>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="enquiry-box">
+        <h3>SEND ENQUIRY</h3>
+        <form>
+          <div class="row">
+            <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="City">
+            </div>
+            <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="Contact">
+            </div>
+          </div>
+          <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+          <div class="text-center mt-3">
+            <button type="submit" class="btn btn-send">Send Message</button>
+          </div>
+        </form>
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="address-container">
+        <h3 class="header">Our Address</h3>
+        
+        <div class="card mb-0 border">
+            <div class="card-row">
+                <div class="label-col">Address</div>
+                <div class="content-col">
+                    Plot No-159, Industrial Area Phase 2,<br>
+                    Panchkula (Haryana)<br>
+                    Pin code-134113
+                </div>
+            </div>
+            
+            <div class="card-row">
+                <div class="label-col">Contact person<br>Atin Arora (Director)</div>
+                <div class="content-col">
+                    <a href="tel:7888491021" class="phone-link">
+                        <i class="bi bi-telephone"></i> 7888491021
+                    </a><br>
+                    <a href="tel:7717514041" class="phone-link">
+                        <i class="bi bi-telephone"></i> 7717514041
+                    </a>
+                </div>
+            </div>
+            
+            <div class="card-row">
+                <div class="label-col">Email us</div>
+                <div class="content-col">
+                    <a href="mailto:alicantodrugsg@gmail.com" class="email-link">alicantodrugsg@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</html>
