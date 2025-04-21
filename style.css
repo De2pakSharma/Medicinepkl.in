@@ -131,7 +131,6 @@
   .feature-border {
     border-left: 1px solid white;
   }
-
   .enquiry-box {
     background-color: #2fa4d7;
     padding: 30px 20px;
@@ -139,6 +138,7 @@
     border-radius: 8px;
     color: #fff;
   }
+
 
   .enquiry-box h3 {
     color: #2c2c2c;
@@ -194,32 +194,55 @@
     padding: 60px 0;
   }
   .product-card {
-    justify-content: center;
-    background: #fff;
-    border: 1px solid #eee;
-    padding: 5px 10px;
-    height: 100%;
-    gap: 5px;
     text-align: center;
+    background: white;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    height: 100%;
   }
+
   .product-card img {
-    max-width: 100%;
-    height: auto;
+    max-height: 200px;
     object-fit: contain;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
+
   .product-title {
     font-weight: 600;
-    font-size: 15px;
-    margin-bottom: 15px;
+    font-size: 14px;
+    margin-top: 10px;
   }
-  
 
   .read-btn {
+    margin-top: 15px;
     padding: 6px 16px;
     border: 1px solid black;
-    background-color: transparent;
-    margin-bottom: 2%;
+    background: white;
+    color: black;
+    border-radius: 5px;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  .carousel-controls {
+    position: absolute;
+    top: -45px;
+    right: 10px;
+    z-index: 2;
+  }
+
+  .carousel-controls button {
+    color: black;
+    padding: 5px 10px;
+    font-size: 25px;
+  }
+  .carousel-controls button:hover{
+    color: black;
   }
   .butoom p,li{
     font-size: 1.1rem;
@@ -383,24 +406,7 @@ footer {
     }
   }
   @media (max-width: 430px){
-    .carousel-control-next-icon, .carousel-control-prev-icon {
-      display: inline-block !important;
-      width: 08rem !important;
-      height: 0.8rem !important;
-      background-repeat: no-repeat;
-      background-position: 50%;
-      background-size: 100% 100%;
-  }
-  .carousel-control-prev, .carousel-control-next {
-    width: 20px !important;
-    height: 20px !important;
-    margin: 0px 10px;
-    background-color: #f8f9fa;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-20%);
-    opacity: 1;
-}
+
 .nextcarousel{
   display: none !important;
 }
@@ -435,13 +441,28 @@ footer {
       text-align: center !important;
     }
 
+    .carousel-item .col-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .hideproduct {
+      display: none !important;
+    }
+
+    .product-card {
+      margin: 0 auto;
+    }
+
+    .carousel-inner .row {
+      justify-content: center;
+    }
   }
  
 .carousel-control-prev,
 .carousel-control-next {
     width: 40px;
     height: 40px;
-    background-color: #f8f9fa;
     border-radius: 50%;
     top: 50%;
     transform: translateY(-20%);
@@ -449,25 +470,5 @@ footer {
 }
 
  
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(1);
-}
  
-@media (max-width: 767px) {
-    .carousel-item .col-sm-hidden {
-        display: none;
-    }
-    
-    .carousel-control-prev {
-        left: -10px;
-    }
-    
-    .carousel-control-next {
-        right: -10px;
-    }
  
-    .carousel-item .col-sm-12 {
-        margin: 0 auto;
-    }
-}
