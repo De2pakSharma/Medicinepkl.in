@@ -1,4 +1,4 @@
- *{
+  *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -314,8 +314,21 @@ footer {
 .back-to-top:hover {
   color: #fff;
 }
+
+.logo-img {
+  border-radius: 5px;
+  border: 1px solid #3098cd;
+  box-shadow: -1px 0px 8px #0000005e;
+  margin: 10px;
+  width: 100%;
+  max-width: 280px;
+  height: 180px;
+  object-fit: contain;
+}
+
+
  
-  @media (max-width: 991px) {
+  @media (max-width: 768px) {
     .navbar-expand-lg .navbar-nav .nav-link{
        color: white !important;
        font-weight: 600 !important;
@@ -369,7 +382,37 @@ footer {
         border-top: 1px solid white;
     }
   }
-  @media (max-width: 500px){
+  @media (max-width: 430px){
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+      display: inline-block !important;
+      width: 08rem !important;
+      height: 0.8rem !important;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 100% 100%;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0px 10px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-20%);
+    opacity: 1;
+}
+.nextcarousel{
+  display: none !important;
+}
+    .logoslider{
+      display: none;
+    }
+    .nextt1{
+      display: none;
+    }
+    .next11{
+      display: none;
+    }
     .text,.text1{
        text-align: center;
     }
@@ -393,3 +436,38 @@ footer {
     }
 
   }
+ 
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-20%);
+    opacity: 1;
+}
+
+ 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+ 
+@media (max-width: 767px) {
+    .carousel-item .col-sm-hidden {
+        display: none;
+    }
+    
+    .carousel-control-prev {
+        left: -10px;
+    }
+    
+    .carousel-control-next {
+        right: -10px;
+    }
+ 
+    .carousel-item .col-sm-12 {
+        margin: 0 auto;
+    }
+}
